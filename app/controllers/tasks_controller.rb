@@ -3,6 +3,7 @@ class TasksController < ApplicationController
 
   # GET /tasks or /tasks.json
   def index
+    #変更
     @tasks = current_user.tasks
     #@tasks = @tasks.order(created_at: "DESC")
     #binding pry
