@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
 
+
     <p><h1>Tasks</h1></p>
     <div class="row-center">
       <%= form_with(scope: :search, url: tasks_path, method: :get, local: true) do |f| %>
@@ -56,3 +57,5 @@
     </span>
   </div>
 </div>
+
+  <%= link_to "aono", tasks_path(id:1,name: "a",task: @tasks), method: :get %>
